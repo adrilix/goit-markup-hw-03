@@ -10,6 +10,7 @@
     --bgc-foot-hero: #2F303A;
     --adress-link: rgba(255, 255, 255, 0.6);
     --border-card: #EEEEEE;
+    --portfolio-bgc: #E5E5E5;
 }
 
 html {
@@ -82,7 +83,7 @@ body {
 /* nav */
 /* logo */
 .header{
-    border-bottom: 4px solid var(--header-line);
+    border-bottom: 1px solid var(--header-line);
 }
 
 .box-header{
@@ -97,7 +98,8 @@ body {
 }
 
 .header-link{
-    padding: 24px 68px 25px 0px;
+    padding: 24px 0px 25px;
+    margin-right: 68px;
 }
 
 
@@ -254,7 +256,7 @@ body {
 /* чем мьі занимаемся/діяльність/activity */
 
 .activity{
-
+    padding-top: 0px;
 }
 
 .activity-title{
@@ -298,12 +300,16 @@ body {
     background-color: var(--text-third-tlbgc);
 }
 
+.team-caption{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .teamcard{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .teamcard-text{
@@ -311,10 +317,13 @@ body {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 /* page2 portfolio */
+
+.portfolio{
+}
 
 .filters{
     display: flex;
@@ -358,13 +367,13 @@ body {
 
 .project-card{
     background: var(--text-third-tlbgc);
-    border: 1px solid var(#EEEEEE)
+    /* border: 1px solid var(#EEEEEE) */
 }
 
 .project-text{
     padding: 20px 24px;
     border-color: #000000;
-    border: 4px;
+    border: 1px solid var(--portfolio-bgc)
 
 }
 
