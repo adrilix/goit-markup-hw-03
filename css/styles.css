@@ -62,9 +62,7 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;  
     color: #212121; 
-    margin: 0;
-    max-width: 1600px;
-    
+    margin: 0;    
 }
 
 .container{
@@ -79,11 +77,17 @@ body {
     padding-bottom: 94px;
 }
 
+img{
+    display: block;
+}
+
 /* header */
 /* nav */
 /* logo */
 .header{
     border-bottom: 1px solid var(--header-line);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .box-header{
@@ -98,8 +102,8 @@ body {
 }
 
 .header-link{
-    padding: 24px 0px 25px;
-    margin-right: 68px;
+    padding: 0px;
+    margin-right: 93px;
 }
 
 
@@ -137,8 +141,11 @@ body {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    padding: 32px 25px 32px 25px;
 
+}
+
+.header-item:not(:last-child){
+    margin-right: 50px;
 }
 
 .header-item:hover, :focus{
@@ -153,7 +160,7 @@ body {
 }
 
 
-.mail {
+.contact {
     color: var(--text-second);
     font-weight: 500;
     font-size: 14px;
@@ -161,21 +168,12 @@ body {
     letter-spacing: 0.02em;
 }
 
-.phone {
-    color: var(--text-second);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    margin-left: 50px;
+.contact:not(:last-child){
+    margin-right: 50px;
 }
 
 
-.mail:hover,:focus{
-    color: var(--brand-color);
-}
-
-.phone:hover,:focus{
+.contact:hover,:focus{
     color: var(--brand-color);
 }
 
@@ -213,7 +211,11 @@ body {
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-}  
+} 
+
+.button-hero:focus{
+    color: var(--text-third-tlbgc);
+}
 
 
 /* секція особливості/features */
@@ -271,6 +273,10 @@ body {
 .activity-items{
     display: flex;
     justify-content: space-between;
+}
+
+.activity-item img{
+    display: block;
 }
 
 /* наша команда */
@@ -353,13 +359,17 @@ body {
     margin-right: 8px;
 }
 
-.button-filter:hover,:focus{    
-    background-color: var(--brand-color);
+.button-filter:hover{    
+    background: #2196F3;
+    color:var(--text-third-tlbgc);
+}
+
+.button-filter:focus{    
+    background-color: #2196F3;
     color:var(--text-third-tlbgc);
 }
 
 .project-cards{
-    outline: #2196F3;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
